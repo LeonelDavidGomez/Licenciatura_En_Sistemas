@@ -1,0 +1,20 @@
+package ar.edu.info.unlp.refactoring.ejercicio1;
+
+import java.time.LocalDate;
+
+public class Product {
+    protected TimePeriod timePeriod;
+    
+    public Product (TimePeriod t) {
+    	
+    	this.timePeriod=t;
+    	
+    }
+    public LocalDate startDate() {
+        return this.timePeriod.start();
+    }
+
+    public LocalDate endDate() {
+        return this.timePeriod.end();
+    }
+}
