@@ -1,0 +1,17 @@
+import java.util.List;
+
+public class Document {
+	List<String> words;
+	  
+    public long characterCount() {
+ 	      return this.words
+ 			         .stream()
+ 			         .mapToLong(w -> w.length())
+ 			         .sum();
+    		}
+    public long calculateAvg() {
+    	  return this.characterCount() / this.words.size();
+ 	    
+	}
+
+}
